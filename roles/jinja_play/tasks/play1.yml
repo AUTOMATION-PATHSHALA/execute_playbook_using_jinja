@@ -1,0 +1,6 @@
+---
+# tasks file for jinja_play
+
+- name: Execute 1st Playbook
+  ansible.builtin.debug:
+    msg: "Playbook One Executed!"

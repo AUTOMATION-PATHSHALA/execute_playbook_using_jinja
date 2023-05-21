@@ -1,0 +1,9 @@
+{% set playbook_name = "" %}
+{% if "one" in requested_play %}
+{% set playbook_name = "play1.yml" %}
+{% elif "two" in requested_play %}
+{% set playbook_name = "play2.yml" %}
+{% elif "three" in requested_play %}
+{% set playbook_name = "play3.yml" %}
+{% endif %}
+{{ playbook_name }}

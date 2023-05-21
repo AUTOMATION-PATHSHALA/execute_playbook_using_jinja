@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Request To Execute Playbook
+      import_role:
+        name: jinja_play
+        tasks_from: main.yml
+      vars:
+        requested_play: "one"

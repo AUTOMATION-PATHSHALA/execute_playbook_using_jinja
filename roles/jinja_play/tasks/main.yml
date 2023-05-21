@@ -1,0 +1,6 @@
+---
+# tasks file for jinja_play
+
+- name: Execute Requested Playbook
+  include_tasks:
+    file: "{{ exec_play }}"
